@@ -1,7 +1,8 @@
 package card.test;
 
+
 import com.codeborne.selenide.Configuration;
-import net.jodah.failsafe.internal.util.Assert;
+import dev.failsafe.internal.util.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import card.data.DataHelper;
