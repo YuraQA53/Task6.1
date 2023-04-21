@@ -10,16 +10,16 @@ import card.page.LoginPageV2;
 
 import static com.codeborne.selenide.Selenide.open;
 
-class MoneyTransferTest {
+class TransferTest {
 
     @BeforeEach
     void setup() {
-        Configuration.headless = true;
         Configuration.holdBrowserOpen = true;
+        open("http://localhost:9999");
     }
 
     @Test
-    void shouldTransferMoneyBetweenOwnCardsV2() {
+    void transferMoneyBetweenOwnCardsV2() {
         open("http://localhost:9999");
         var loginPage = new LoginPageV2();
         var authInfo = DataHelper.getAuthInfo();
