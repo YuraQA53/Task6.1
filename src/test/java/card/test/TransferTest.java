@@ -18,13 +18,6 @@ public class TransferTest {
         open("http://localhost:9999/");
     }
 
-    //@Test
-    //void shouldTransferMoneyBetweenOwnCards() {
-    //var validAuth = DataHelper.getAuthInfo();
-    //new LoginPageV2()
-    //        .validLogin(validAuth)
-    //        .validVerify(DataHelper.getVerificationCodeFor(validAuth));
-    // }
     @Test
     void shouldTransferMoneyBetweenOwnCardsV2() {
         var loginPage = new LoginPageV2();
